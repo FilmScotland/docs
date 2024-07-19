@@ -9,13 +9,15 @@ type: fullpage
 
 SAMMI can connect to your Twitch account, remotely control it and listen to events in your stream.
 
-#### Link a single Twitch account
+#### Link a Twitch account
 We need to authorize SAMMI to interact with your Twitch account.
 
 1. In SAMMI click on **Twitch Connections** button.
-2. Click on **Link Streamer Account** which should open a new browser window and redirect you to Twitch to authorize SAMMI.
-3. Press **Authorize** and wait to be redirected again to see `All good, you can go back to SAMMI now` message in your browser.
-4. Back in SAMMI you should now see your Twitch account in the list!
+2. Click on the "+" icon-    Left click will open this in a browser window, Right click will copy the URL link
+3. Read the warning message and click yes.
+4. This should open a new browser window and redirect you to Twitch to authorize SAMMI.
+5. Press **Authorize** and wait to be redirected again to see `All good, you can go back to SAMMI now` message in your browser.
+6. Back in SAMMI you should now see your Twitch account in the list!
 
 
    {% include video.html w="75" src="link-twitch.mp4" alt="Linking a Twitch account" %}
@@ -24,30 +26,21 @@ We need to authorize SAMMI to interact with your Twitch account.
 
 **Linked Twitch account's settings:**
 
-{% include image.html w="75" src="account-settings.png" alt="Active Twitch Connection" %}
+{% include image.html w="75" src="![image](https://github.com/user-attachments/assets/b3bd8bad-ebf3-40ee-949e-b6acb29738a4)
+" alt="Active Twitch Connection" %}
 
-- `Join chat under this name` - all your Twitch chat messages and whispers from SAMMI will be sent under this Twitch account's name
+- `Receive Events From` - check all events you wish to listen for and received triggers for. Some events will be greyed out if you're not affiliate.
+- `Send Messages As` - all your Twitch chat messages and whispers from SAMMI will be sent under this Twitch account's name (Commonly used for alt/bot accounts)
 - `Join channel` - whether you want to join this Twitch account's chat and listen for chat messages
-- `Listen for` - check all events you wish to listen for and received triggers for. Some events will be greyed out if you're not affiliate.
-- `Revoke Token` - disconnect your Twitch account from SAMMI
-- (only if affiliate) `Edit Channel Points` - allows you to create, modify and delete all your current channel points
-
-**Twitch Connections General Settings**
-
-{% include image.html w="75" src="account-settings2.png" alt="Active Twitch Connection" %}
-
-- `Connect/Disconnect Twitch` - connect to Twitch to be able to receive and send chat messages, and listen to events
-- `Auto connect to Twitch` - check this if you want SAMMI to automatically connect to Twitch once launched, otherwise you will have to press Connect Twitch button every time.
-- `Copy Streamer URL` - if you would rather copy the URL instead of opening it in your default browser to link your account, you can use this option instead
-- `Done` - click Done to save the settings
-
+- `X` - disconnect your Twitch account from SAMMI
+- (only if affiliate) `Edit Rewards` - allows you to create, modify and delete all your current channel points
 
 #### Link multiple Twitch accounts
-You can link multiple Twitch accounts to SAMMI by following the same steps in [Link a single Twitch account](#linkasingletwitchaccount) section, but you will need to click 'Link Bot Account' instead of 'Link Streamer Account'.
+You can link multiple Twitch accounts to SAMMI by following the same steps in [Link a single Twitch account](#linkasingletwitchaccount) section.
 
 This is useful if you want to use a different Twitch account to send Twitch chat messages from. It makes it easier for your viewers to tell the difference between you personally interacting with them and any automated messages you have set up in SAMMI.
 
-{% include alert.html text="All Twitch chat messages will be sent from your Twitch account that is marked as <strong>Join chat under this name</strong> in the <code>Twitch Connections</code> menu. You can freely switch to a different account your messages will be sent from." type="danger" %}
+{% include alert.html text="All Twitch chat messages will be sent from your Twitch account that is marked as <strong>Send Messages AS</strong> at the top of the <code>Twitch Connections</code> menu. You can freely switch to a different account your messages will be sent from." type="danger" %}
 
 **Listen to Twitch events from your alternate account(s)**\
 SAMMI will automatically listen to all selected events and chat (if Join Channel is checked) from all your Twitch accounts.
